@@ -11,6 +11,8 @@ import web3, {
   Transaction,
 } from '@solana/web3.js';
 
+import { MsgExecuteContract } from "cosmjs-types/cosmwasm/wasm/v1/tx";
+
 const Button = (props) => (
   <button
     {...props}
@@ -56,5 +58,6 @@ const ReactLiveScope = {
   ...React,
   ResultTooltip,
   Button,
+  MsgExecuteContract,
 };
 export default ReactLiveScope;
